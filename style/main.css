@@ -1,0 +1,129 @@
+body{
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.wrapper{
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    margin: 0 auto;
+}
+
+.circle {
+    width: 10%;
+    height: 10%;
+    background-color: #fd1900;
+    border-radius: 50%;
+} 
+
+.circle-red1{
+
+    position: absolute;
+    left: 20%;
+    top: 20%;
+    z-index: 1;
+       
+}
+
+.circle-red1:hover{
+    background-color: green;
+    z-index: 50;;
+}
+
+.circle-red2{
+
+    display: flex;
+    margin: auto;
+
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    top: -10%;
+    left: 20%;
+    z-index: 15;
+}
+
+.circle-red2:hover{
+    background-color: hotpink;
+    z-index: 50;;
+}
+
+.circle-red3{
+    position: absolute;
+    display: flex;
+    margin: auto;
+    background-color: red;
+    border-radius: 50%;
+    top: 20%;
+    left: 50%;
+    z-index: 15;
+}
+.circle-red3:hover{
+    background-color: orange;
+    z-index: 50;;
+}
+
+
+
+.circle-red4{
+    position: absolute;
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+    background-color: red;
+    border-radius: 50%;
+    top: -10%;
+    left: 50%;
+    z-index: 15;
+}
+.circle-red4:hover{
+    background-color: olive;
+    z-index: 50;
+}
+.blue{
+    display: flex;
+    margin: auto;
+    margin-top: 200px;
+    
+    position: relative;
+    background-color: blue;
+    top: -5%;
+    left: -10%;
+    width: 300px;
+    height: 300px;
+    z-index: 25;
+       
+}
+
+.blue:hover{
+    background-color: hsla(145, 96%, 52%, 0.979);
+    z-index: 90;
+    overflow: visible;   
+
+}
+
+.blue:hover .yellow{
+    z-index: 0;
+    position: static;
+}
+
+.yellow{
+
+    display: flex;
+    margin: auto;
+
+    position: absolute;
+   
+    top: 3%;
+    left: 33%;
+    background-color: yellow;
+    
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    z-index: 30;
+   
+}
+
